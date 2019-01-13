@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avaliação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <h1> Compras efetuada ao </h1>
+    <P>
+    
+    </p>
+
+    <h2><label>O que deseja comprar - 'Vamos  aos cálculos'</label></h2>
+    
+    <input type="button" onclick="descontoVenda()" value="Comprar"title="faça uma Simulação">
+    <script>
+        function descontoVenda() {
+            var valor,parcelas,desconto,descontoCompra,comissao,comissaoDesconto,comissaoTotal;
+
+            valor = parseInt(prompt('Digite o valor total do produto:'));
+            parcelas = prompt('O produto será parcelado em 3x? digite [S/N]:').toUpperCase();
+            if (isNaN(valor)) {
+                alert('Digite apenas números!\nTente novamente!');
+                return descontoVenda();
+
+            }
+
+            valorParcelas = valor / 4;
+
+            desconto = valor * 0.05;
+            descontoCompra = valor - desconto;
+
+            comissaoTotal = valor * 0.02;
+            comissaoDesconto = descontoCompra * 0.02;
+
+
+
+            if (parcelas == 'S') {
+                document.write('<div>Você irá pagar 4x de:\tR$' + valorParcelas + '\npelo seu produto que custa --> \nR$' + valor + '</div>');
+                document.write('<div>O vendedor irá receber:\tR$' + comissaoTotal + '\npela comissão de venda!</div>');
+            } else {
+                document.write('<div>Você irá pagar:\tR$' + descontoCompra + '\npelo seu produto que custa --> \nR$' + valor + '</div>');
+                document.write('<div>O vendedor irá receber:\tR$' + comissaoDesconto + '\npela comissão da venda!</div>');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

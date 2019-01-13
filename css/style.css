@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Código CSS - Entendendo a folha de estilos</title>
+<style type="text/css">
+h1{
+  font-style: italic;
+}
+#fundo{
+  background-color: #a3a9fa;
+}
+.paragrafo{
+  color: red;
+}
+.paragrafo2{
+  color: #0018ff;
+}
+</style>
+</head>
+<body>
+<div id="fundo">
+  <h1>Sou a tag h1</h1>
+ 
+  <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices feugiat ullamcorper. Cras ut tristique velit. Fusce euismod turpis at lorem vestibulum malesuada. Mauris porttitor sem vitae leo tincidunt varius. Nunc vulputate interdum sem, eu semper metus suscipit ut. Sed eget ante metus. Fusce leo ante, aliquam in sagittis id, auctor quis turpis. Donec vitae magna quis mi dignissim auctor quis eget augue.</p>
+ 
+  <p class="paragrafo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices feugiat ullamcorper. Cras ut tristique velit. Fusce euismod turpis at lorem vestibulum malesuada. Mauris porttitor sem vitae leo tincidunt varius. Nunc vulputate interdum sem, eu semper metus suscipit ut. Sed eget ante metus. Fusce leo ante, aliquam in sagittis id, auctor quis turpis. Donec vitae magna quis mi dignissim auctor quis eget augue.</p>
+</div>
+ 
+</body>
+</html>
